@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<link href="CSS/style.css" media="all" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+<link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+<script src="Scripts/responsiveslides.min.js"></script>
+<script type='text/javascript' src='menu_jquery.js'></script>
+<script type='text/javascript' src='menu.js'></script>
+
+<head>
+	<title>AAMTC - Association d’Acupuncteurs en Médecine Traditionnelle Chinoise</title>
+
+	<meta http-equiv='X-UA-Compatible' content='chrome=1' />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+</head>
+
+
+
+<body>		
+	<header>
+<!-- Drapeaux associés à une langue de traduction -->		
+
+		<div id=flag>
+			<a href="index.php"><img id="logo" src="img/favicon.png"></a> 
+			<a href="index.php"><img id="lg" src="img/France-Flag.png" alt="Traduire la page en français"></a> 
+			<a href="English/index.php"><img id="lg" src="img/UnitedKingdom.png" alt="Traduire la page en anglais"></a> 
+			<a href="Spanish/index.php"><img id="lg" src="img/Spain-Flag.png" alt="Traduire la page en espagnol"></a> 
+		</div>
+
+<!-- Construction du menu déroulant -->			
+		
+		<div id="menu">	
+			<ul>
+				<li><a href="index.php">Accueil</a></li>
+				<li><a href="pathologies.php">Pathologies</a></li>
+					<ul>
+						<li><a href="carte.php"></a></li>
+					</ul>
+				<li><a href="a_propos.php">A propos</a></li>
+				<li><a href="mon_compte.php">Mon Compte</a>
+					<ul>
+						<li><a href="deconnexion.php">Déconnexion</a></li>
+					</ul>
+				</li>
+
+		</div>
+
+	</header>
+
+<!-- Champ d'insertion du corps de page client -->
+
+<section id="main_section">
+
+	<article>
+		<h2>Formulaire d'inscription</h2>
+		<form method="post" action="lib/main.php?variable=truc" id="formulaire">
+			<ul>
+				<li>
+					<label tabindex="0" for="full_name">Nom complet&nbsp;:</label>
+					<input tabindex="1" type="text" id="full_name" name="full_name" placeholder="Prénom Nom" required>
+				</li>
+				<li>
+					<label tabindex="2" for="email_addr">Adresse e-mail&nbsp;:</label>
+					<input tabindex="3" type="email" id="email_addr" name="email_addr" required>
+				</li>
+				<li>
+					<label tabindex="4" for="email_addr_repeat">Confirmez l'adresse e-mail&nbsp;:</label>
+					<input tabindex="5" oninput="checkmail(this)" type="email" id="email_addr_repeat" name="email_addr_repeat" required>
+				</li>
+				<li>
+					<label tabindex="6" for="mdp">Mot de passe&nbsp;:</label>
+					<input tabindex="7" type="password" id="mdp" name="mdp" required>
+				</li>
+				<li>
+					<label tabindex="8" for="mdp_repeat">Confirmez le mot de passe&nbsp;:</label>
+					<input tabindex="9" oninput="checkmdp(this)" type="password" id="mdp_repeat" name="mdp_repeat" required>
+				<li>
+					<input tabindex="10" type="submit" value="Effectuer la réservation" /> 
+				</li>
+			</ul>
+		</form>
+
+	
+
+		<section class="article_section">
+
+
+			<!-- Champ d'insertion de texte -->
+</section>
+
+</section>				
+
+<footer>
+
+<!-- Champ d'insertion de l'annuaire -->	
+	
+	<footer id=tree>
+		<a href="index.php">Accueil</a> | <a href="pathologies.php">Pathologies</a> | <a href="a_propos.php">A propos</a> | <a href="mon_compte.php">Mon Compte</a><br>
+		AAMTC - Association d’Acupuncteurs en Médecine Traditionnelle Chinoise
+	</footer>
+	</body>
