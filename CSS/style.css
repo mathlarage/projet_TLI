@@ -1,0 +1,392 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    margin-bottom: 20px;
+}
+input[type="number"] {
+    width: 70px;
+}
+header {
+    background-color: rgb(167, 20, 20);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(119, 119, 119, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 95%;
+}
+#flag {
+    height: auto;
+    width: 100%;
+}
+#logo {
+    padding: 10px;
+    width: 90px;
+}
+#lg {
+    float: right;
+    padding-right: 5px;
+    width: 20px;
+}
+#title {
+    width: 150px;
+}
+#backslides {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 20px;
+    width: 90%;
+}
+#slideshow {
+    background-color: white;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rslides {
+    box-shadow: 0 0 10px 1px rgba(119, 119, 119, 0.75);
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.rslides li {
+    backface-visibility: hidden;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.rslides li:first-child {
+    display: block;
+    float: left;
+    position: relative;
+}
+.rslides img {
+    border: 0 none;
+    display: block;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+.rslides_tabs {
+    background: rgba(0, 0, 0, 0.25) none repeat scroll 0 0;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), 0 0 5px #000000 inset;
+    font-size: 18px;
+    list-style: outside none none;
+    margin: 0 auto 50px;
+    max-width: 540px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+#menu ul {
+    display: table;
+    margin: auto;
+    max-width: 1000px;
+    padding: 0;
+    width: 100%;
+}
+#menu ul li {
+    border-left: 1px none #d2d2d2;
+    border-right: 1px none #d2d2d2;
+    border-top: 0 none;
+    display: table-cell;
+}
+#menu ul li a {
+    color: #d2d2d2;
+    display: block;
+    padding: 8px 8px 17px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+    width: 100%;
+}
+#menu ul li a:hover, #menu ul li a:focus {
+    background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+}
+#menu ul li a:active {
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)) repeat scroll 0 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+}
+#menu ul li ul {
+    display: none;
+    width: auto;
+}
+#menu ul li:hover ul {
+    display: block;
+}
+#menu ul li ul li {
+    background-color: rgba(3, 3, 3, 0.5);
+    display: block;
+    position: relative;
+    z-index: 50;
+}
+#menu ul li ul li a {
+    display: block;
+    text-align: center;
+    width: 150px;
+}
+#menu li ul {
+    position: absolute;
+}
+#menu ul li:hover ul li ul {
+    display: none;
+    width: auto;
+}
+#menu ul li ul li:hover ul {
+    display: block;
+}
+#menu ul li ul li ul {
+    display: table;
+    float: left;
+    position: absolute;
+}
+#menu li ul ul a {
+    width: 150px;
+}
+#menuAdmin ul {
+    display: table;
+    margin: auto;
+    max-width: 1000px;
+    padding: 0;
+    width: 100%;
+}
+#menuAdmin ul li {
+    border-left: 1px groove #d2d2d2;
+    border-right: 1px groove #d2d2d2;
+    border-top: 0 none;
+    display: table-cell;
+}
+#menuAdmin ul li a {
+    color: #d2d2d2;
+    display: block;
+    padding: 8px 8px 17px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    width: 100%;
+}
+#menuAdmin ul li a:hover, #menu ul li a:focus {
+    background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+}
+#menuAdmin ul li a:active {
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)) repeat scroll 0 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+}
+#menuAdmin ul li ul {
+    display: none;
+    width: auto;
+}
+#menuAdmin ul li:hover ul {
+    display: block;
+}
+#menuAdmin ul li ul li {
+    background-color: rgba(3, 3, 3, 0.5);
+    display: block;
+    position: relative;
+    z-index: 50;
+}
+#menuAdmin ul li ul li a {
+    display: block;
+    text-align: center;
+    width: 250px;
+}
+#menuAdmin li ul {
+    position: absolute;
+}
+#menuAdmin ul li:hover ul li ul {
+    display: none;
+    width: auto;
+}
+#menuAdmin ul li ul li:hover ul {
+    display: block;
+}
+#menuAdmin ul li ul li ul {
+    display: table;
+    float: left;
+    position: absolute;
+}
+#menuAdmin li ul ul {
+    border-left: 1px solid #fff;
+    margin: -44px 0 0 150px;
+}
+#menuAdmin li ul ul a {
+    width: 150px;
+}
+@font-face {
+    font-family: "Police tkt";
+    src: url("OpenSans-LightItalic.ttf");
+}
+#main_section {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 600px;
+    width: 95%;
+}
+article {
+    background-color: grey;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 95%;
+}
+.article_header {
+    margin: 0;
+}
+#article-etoiles {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 35%;
+}
+#article-cheminees {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 12%;
+}
+.article_section {
+    float: left;
+    font-family: serif;
+    height: auto;
+    margin-bottom: 50px;
+    max-width: 60%;
+    overflow: hidden;
+    padding-left: 20px;
+}
+.article_section_admin {
+    font-family: serif;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-left: 20px;
+}
+.article_aside {
+    float: right;
+    height: auto;
+    margin-bottom: 50px;
+    max-width: 40%;
+    text-align: center;
+}
+h3 {
+    color: #333333;
+    font-family: "Police tkt",Helvetica,Arial,sans-serif;
+    padding-left: 20px;
+}
+h2 {
+    color: #333333;
+    font-family: "Police tkt",Helvetica,Arial,sans-serif;
+    padding-left: 20px;
+}
+p {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.small {
+    box-shadow: 0 0 10px 1px rgba(119, 119, 119, 0.75);
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
+    width: 45%;
+}
+.big {
+    box-shadow: 0 0 10px 1px rgba(119, 119, 119, 0.75);
+    margin-top: 10px;
+    text-align: center;
+    width: 90%;
+}
+footer {
+    background-color: rgb(167, 20, 20);
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+#social {
+    float: right;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: auto;
+}
+#tree {
+    color: white;
+    font-family: arial;
+    font-size: small;
+    text-align: center;
+}
+#googleplus {
+    width: 30px;
+}
+#logis {
+    width: 30px;
+}
+#facebook {
+    width: 30px;
+}
+#tripadvisor {
+    width: 30px;
+}
+#routard {
+    width: 30px;
+}
+a {
+    color: white;
+    text-decoration: underline;
+}
+a:visited {
+    color: white;
+}
+a:hover, a:focus, a:active {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: white;
+    text-decoration: none;
+}
+#email a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #333333;
+}
+#email a:hover, a:focus, a:active {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: grey;
+    text-decoration: none;
+}
+        
+:invalid { 
+    background-color: #F0DDDD;
+    border-color: #e88;
+    -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, .8);
+    -moz-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+    -o-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+    -ms-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+    box-shadow:0 0 5px rgba(255, 0, 0, .8);
+}
+
+:required {
+    border-color: #88a;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+    -ms-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+    box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+}
